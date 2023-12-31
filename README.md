@@ -1,33 +1,59 @@
-# Terminal Calculator 
-![pexels-karolina-grabowska-5412432](https://github.com/ShradhaSK/p3-terminal-calculator/assets/131806140/42d049d2-1500-4694-aaac-7510707b1db7)
+ ![download](https://github.com/ShradhaSK/p3-terminal-calculator/assets/131806140/78e6ac5e-fb13-4faf-aef8-9fdee758c251)
+ # Terminal Calculator 
 
 Welcome,
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+This is a terminal arithmetic calculator to fulfill all your complex calculation needs, without having to open a separate app, amazing right? 🤯
+It allows you to compute complex arithmetic calculations right from the comfort of your Terminal. Beware, it is not for the faint of hearts; this will prove to be a saviour for developers all around the world, who struggle with adding an extra app window to already piling tabs and terminal windows open on their system.
 
-## Reminders
+## Features
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+- Simple operations:
+  - Addition
+  - Subtraction
+  - Multiplication
+  - Division
+  
+- A little complex operations too:
+  - Square root
+  - Exponent
+  - Average
+  - Percentage
 
-## Creating the Heroku app
+- There is also the feature of memory, which stores the last TEN OPERATIONS! So now you would not have start over just because you forgot one of the answers in between!
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Deployment
+The project was deployed as a Heroku app. The following steps were followed:
+
+### Creating the Heroku app
+
+While creating the app, two buildpacks were added from the _Settings_ tab. The ordering is as follows:
 
 1. `heroku/python`
 2. `heroku/nodejs`
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+A _Config Var_ called `PORT` was created and the value for this was set as `8000`
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+Connected to my GitHub repository in the Deployment section.
 
-Connect your GitHub repository and deploy as normal.
+The app was deployed manually.
 
-## Constraints
+## Testing
+The project was tested for bugs both in the local environment and after deployment to Heroku.
+The following cases were tested:
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+1. Enter valid values for both numbers and operator
+2. Enter invalid operator
+3. Enter invalid first value
+4. Enter invalid second value
+5. Enter one of the non-arithmetic valid operators (M, H)
 
----
+All the tests passed, and no bug was detected in the deployed app.
 
-Happy coding!
+## Credits
+- Read a short article on [Stack Overflow]([url](https://stackoverflow.com/)) on how to add the memory feature for the calculator
+- Watched a short video on python classes and and how to use them.
+
+## Media
+- Downloaded Calculator icon for the README.md file from [Icon Finder](https://www.iconfinder.com/icons/171352/calculator_icon)
+
