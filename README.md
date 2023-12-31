@@ -1,5 +1,5 @@
-# Terminal Calculator ![calc](https://github.com/ShradhaSK/p3-terminal-calculator/assets/131806140/2a137d5b-5e9e-42d0-915e-0cd92377228e)
-
+# Terminal Calculator 
+![pexels-karolina-grabowska-5412432](https://github.com/ShradhaSK/p3-terminal-calculator/assets/131806140/42d049d2-1500-4694-aaac-7510707b1db7)
 
 Welcome,
 
