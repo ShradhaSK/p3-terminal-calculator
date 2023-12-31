@@ -1,4 +1,5 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Terminal Calculator ![calc](https://github.com/ShradhaSK/p3-terminal-calculator/assets/131806140/2a137d5b-5e9e-42d0-915e-0cd92377228e)
+
 
 Welcome,
 
