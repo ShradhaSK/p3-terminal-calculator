@@ -43,10 +43,10 @@ The project was tested for bugs both in the local environment and after deployme
 The following cases were tested:
 
 1. Enter valid values for both numbers and operator
-2. Enter invalid operator
-3. Enter invalid first value
-4. Enter invalid second value
-5. Enter one of the non-arithmetic valid operators (M, H)
+3. Enter invalid operator
+4. Enter invalid first value
+5. Enter invalid second value
+6. Enter one of the non-arithmetic valid operators (M, H)
 
 All the tests passed, and no bug was detected in the deployed app.
 
