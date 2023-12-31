@@ -36,6 +36,9 @@ class Operations:
 
 
 def past_results():
+    """
+    Function to list last 10 operations
+    """
     global memory, num1
     print('\nPrevious operations:'
           '\n‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾')
@@ -49,3 +52,14 @@ def past_results():
         print('>', mem.value1, mem.operator, mem.value2, '=', mem.answer)
     print('\nContinue your operation'
           '\nYour first value is ───→', num1)
+    
+    def num_validation(num):
+        global valid
+        number = ''
+        while valid:
+            try:
+                number = float(input(f"{num}:\n"))
+                break
+            except ValueError:
+                print('\nInvalid input! (Only whole numbers and decimals allowed!).')
+        return number
