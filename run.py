@@ -67,3 +67,39 @@ def past_results():
                 print('\nInvalid input! (Only whole numbers and decimals allowed!).')
         return number
     
+    def operation_validation():
+        operator = input('\nOperator:\n').upper()
+        while operator not in operators or operator.isspace():
+            if operator == 'H':
+                user_help()
+                operator = input('\nOperator: ').upper()
+            elif operator == 'M':
+                past_results()
+                operator = input('\nOperator: ').upper()
+            elif operator == 'R':
+                print('\nYour calculation has been reseted.\n')
+                calculate()
+            else:
+                print('\n► Invalid operator, try again.\n')
+                operator = input('Operator: ').upper()
+        return operator
+    
+
+def operate(x):
+    """
+    To get the operators to use in the calculate function
+    """
+    global num1, num2, result, memory
+
+
+def calculate():
+    """calculate the result based on
+    the user entered numbers and arithmetic operato
+    r"""
+    global num1, num2, valid
+
+
+def user_help():
+    """User help options
+    """
+    global num1
