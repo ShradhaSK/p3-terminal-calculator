@@ -54,6 +54,9 @@ def past_results():
           '\nYour first value is ───→', num1)
     
     def num_validation(num):
+        """
+        Function to check if the user entered number is other than whole number or decimal
+        """
         global valid
         number = ''
         while valid:
@@ -63,3 +66,4 @@ def past_results():
             except ValueError:
                 print('\nInvalid input! (Only whole numbers and decimals allowed!).')
         return number
+    
