@@ -67,7 +67,7 @@ def past_results():
                 print('\nInvalid input! (Only whole numbers and decimals allowed!).')
         return number
     
-    def operation_validation():
+    def operator_validation():
         operator = input('\nOperator:\n').upper()
         while operator not in operators or operator.isspace():
             if operator == 'H':
@@ -78,28 +78,69 @@ def past_results():
                 operator = input('\nOperator: ').upper()
             elif operator == 'R':
                 print('\nYour calculation has been reseted.\n')
-                calculate()
+                calculate_result()
             else:
                 print('\n► Invalid operator, try again.\n')
                 operator = input('Operator: ').upper()
         return operator
     
 
-def operate(x):
+def operation_to_perform(op):
     """
-    To get the operators to use in the calculate function
+    operation to perform based on user input of operator
     """
     global num1, num2, result, memory
+    while op in operators:
+        try:
+            if op == '+':  # ADDITION
+                result = float(num1) + float(num2)
+                break
+            elif op == '-':  # SUBTRACTION
+                result = float(num1) - float(num2)
+                break
+            elif op == '*':  # MULTIPLICATION
+                result = float(num1) * float(num2)
+                break
+            elif op == '/':  # DIVISION
+                result = float(num1) / float(num2)
+                break
+            elif op == '**':  # EXPONENTIAL
+                result = float(num1) ** float(num2)
+                break
+            elif op == '//':  # SQUARE ROOT
+                result = float(num1) ** (1 / float(num2))
+                break
+            elif op == 'A':  # AVERAGE
+                result = (float(num1) + float(num2)) / 2
+                break
+            elif op == '%':  # PERCENTAGE
+                result = float(num1) * float(num2) / 100
+                break
+        except ArithmeticError as e:
+            print('\nError:', e)
+            break
+    # Adding the operation to the 'memory' list.
+    operation = Operations(num1, op, num2, result)
+    memory.append(operation)
+    # Format and display result.
+    print('\n──→ Result:', result, '\n'
+          '\n‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾')
 
 
-def calculate():
+
+def calculate_result():
     """calculate the result based on
     the user entered numbers and arithmetic operato
     r"""
     global num1, num2, valid
 
 
+
 def user_help():
     """User help options
     """
     global num1
+
+
+def main():
+    calculate_result()
